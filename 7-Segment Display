@@ -1,0 +1,41 @@
+t = int(input())
+a = []
+for i in range(t):
+    a.append(input())
+for x in a: 
+    
+    sum = 0
+    for i in x:
+        
+        if(i == '0'):
+            sum = sum+6
+        elif(i == '1'):
+            sum = sum+2
+        elif(i == '2'):
+            sum = sum+5
+        elif(i == '3'):
+            sum = sum+5
+        elif(i == '4'):
+            sum = sum+4
+        elif(i == '5'):
+            sum = sum+5
+        elif(i == '6'):
+            sum = sum+6
+        elif(i == '7'):
+            sum = sum+3
+        elif(i == '8'):
+            sum = sum+7
+        elif(i == '9'):
+            sum = sum+6
+    x=int(sum/2)
+    if(sum%2==0):
+        for a in range(x):
+            print("1",end="")
+    else:
+        y=int(sum/2)
+        for x in range(y):
+            if x==0:
+                print("7",end="")
+            else:
+                print("1",end="")          
+    print()
